@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница входа</title>
+    <style>
+        .result {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h2>Вход</h2>
+    <form id="loginForm">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">Войти</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <script>
+        const users = [
+            { username: 'vi', password: '123' },
+            { username: 'admin', password: 'admin' },
+            { username: 'user', password: 'qwerty' }
+        ];
+    </script>
+    <script src="js2.js"></script>
+</body>
+</html>
